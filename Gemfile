@@ -68,3 +68,4 @@ group :production do
   gem 'pg'
 end
 gem 'faker'
+gem 'rack-cors', :require => 'rack/cors'
