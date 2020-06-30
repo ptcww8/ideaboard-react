@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+
   get 'home/index'
 	root to: 'home#index'
 	#get  '/logs', to: 'logs#index', as: :logs
   namespace :api do
     namespace :v1 do
-      resources :ideas  
+      resources :ideas
+      resources :products
+      resources :categories
     end
   end
   #resources :ideas
